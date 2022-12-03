@@ -1,0 +1,47 @@
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top:$small;
+
+    .cards{
+        @include flex(row, center,none);
+        gap: $xsmall;
+        flex-wrap: wrap ;
+
+        .box{
+            @include flex(column, none,none);
+            gap: $xsmall;
+            flex: 1 1 clamp(300px, 30%,400px);
+            
+            &__info{
+                display: flex;
+                flex-direction: column;
+                padding: $medium;
+            }
+            &__title{
+                font-family: $font-principal;
+                font-size: $medium;
+                color: $primary;
+            }
+            &__subtitle{
+                margin-top: 0.5rem;
+                color: $text-color ;
+                font-size: $base;
+            }
+            &__text{
+                margin-top: $xsmall;
+                font-size: $base;
+                color: $text-color;
+            }
+        }
+
+    }
+
+
+}//margin lo centra
+.img{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,60 @@
+
+
+footer{
+    width: 100%;
+    padding: 50px 0;
+  }
+  .container__footer{
+    display: flex;
+    flex-wrap: wrap;/*que se adapten una abajo de la otra si es necesario*/
+    justify-content: space-between; /*los aomodamos, parecido como en las cards*/
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    flex-direction: row;
+  }
+  .nav__list{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__box{
+    display: flex;
+    flex-direction: column; /*Sin esto, se ve todo como fila*/
+    padding: 20px;
+  }
+  .footer__box .footer__logo{
+    width: 70px;/*Le damos el tamaño al logo*/
+    margin-top: 5px;
+  }
+  .footer__box .terms{
+    max-width: 300px;
+    margin-top: 10px;/*separa el parrafo del logo footer*/
+    font-weight: 300;
+    font-size: 16px; /*tamaño del parrafo*/
+    color: #7a7a7a;
+  }
+  .footer__box h2{
+    margin-bottom: 30px;/*tiramos abajo lo q esta debajo del h2*/
+  }
+  .footer__box a{
+    margin-top: 10px; /*Nos sirve como interlineado*/
+    color: #7a7a7a;
+    font-weight: 700;
+  }
+  .footer__box .nav__list .nav__link{
+    list-style: none;
+    text-decoration: none;
+    color: #7a7a7a;
+    line-height: 10px;/*interlineado de la lista*/
+    text-transform: lowercase;
+    font-weight: 400;
+  }
+  li{
+    margin-top: 10px;
+  }
+  .footer__box a .fab{
+    font-size: 20px;
+  }
+.footer__terms{
+    width: 200px;
+}

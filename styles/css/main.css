@@ -1,0 +1,198 @@
+@charset "UTF-8";
+/*extras q usamos 
+
+
+minuto 35, dice porque lo importamos prmero
+
+
+*/
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Bebas Neue", "arial", sans-serif; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  color: #2B2B2B; }
+
+img {
+  width: 100%; }
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  border-bottom: 2px solid #2b2b;
+  flex-wrap: wrap; }
+  .header__img {
+    max-width: 120px; }
+
+.menu {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap; }
+  .menu .menu__link {
+    font-size: 2.2rem;
+    padding: 1.4rem;
+    flex-wrap: wrap; }
+    .menu .menu__link:hover {
+      color: #2b2b; }
+  .menu .menu__item {
+    flex-wrap: wrap; }
+
+footer {
+  width: 100%;
+  padding: 50px 0; }
+
+.container__footer {
+  display: flex;
+  flex-wrap: wrap;
+  /*que se adapten una abajo de la otra si es necesario*/
+  justify-content: space-between;
+  /*los aomodamos, parecido como en las cards*/
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+  flex-direction: row; }
+
+.nav__list {
+  display: flex;
+  flex-direction: column; }
+
+.footer__box {
+  display: flex;
+  flex-direction: column;
+  /*Sin esto, se ve todo como fila*/
+  padding: 20px; }
+
+.footer__box .footer__logo {
+  width: 70px;
+  /*Le damos el tamaño al logo*/
+  margin-top: 5px; }
+
+.footer__box .terms {
+  max-width: 300px;
+  margin-top: 10px;
+  /*separa el parrafo del logo footer*/
+  font-weight: 300;
+  font-size: 16px;
+  /*tamaño del parrafo*/
+  color: #7a7a7a; }
+
+.footer__box h2 {
+  margin-bottom: 30px;
+  /*tiramos abajo lo q esta debajo del h2*/ }
+
+.footer__box a {
+  margin-top: 10px;
+  /*Nos sirve como interlineado*/
+  color: #7a7a7a;
+  font-weight: 700; }
+
+.footer__box .nav__list .nav__link {
+  list-style: none;
+  text-decoration: none;
+  color: #7a7a7a;
+  line-height: 10px;
+  /*interlineado de la lista*/
+  text-transform: lowercase;
+  font-weight: 400; }
+
+li {
+  margin-top: 10px; }
+
+.footer__box a .fab {
+  font-size: 20px; }
+
+.footer__terms {
+  width: 200px; }
+
+.main-container {
+  overflow: hidden;
+  font-family: "Bebas Neue", "arial", sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  /*    margin-top: -8.8rem;*/
+  background: url(./../partials/Denim.jpg);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center; }
+
+.background-text {
+  text-align: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+  transform: translate(1%, 100%);
+  line-height: 1.5; }
+
+.background__title {
+  line-height: 1.5;
+  font-family: "Bebas Neue";
+  font-weight: normal;
+  font-size: 2rem; }
+
+.btn__chow {
+  padding: .7rem;
+  border-radius: 2rem;
+  border: 0.35rem solid #ff5100;
+  margin-top: .3rem;
+  background-color: #d7dfe2; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 2rem; }
+  .container .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: none;
+    gap: 1.4rem;
+    flex-wrap: wrap; }
+    .container .cards .box {
+      display: flex;
+      flex-direction: column;
+      justify-content: none;
+      align-items: none;
+      gap: 1.4rem;
+      flex: 1 1 clamp(300px, 30%, 400px); }
+      .container .cards .box__info {
+        display: flex;
+        flex-direction: column;
+        padding: 2.2rem; }
+      .container .cards .box__title {
+        font-family: "Bebas Neue", "arial", sans-serif;
+        font-size: 2.2rem;
+        color: #120D31; }
+      .container .cards .box__subtitle {
+        margin-top: 0.5rem;
+        color: #2B2B2B;
+        font-size: 1.6rem; }
+      .container .cards .box__text {
+        margin-top: 1.4rem;
+        font-size: 1.6rem;
+        color: #2B2B2B; }
+
+.img {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center; }

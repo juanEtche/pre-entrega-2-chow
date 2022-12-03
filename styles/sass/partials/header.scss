@@ -1,0 +1,29 @@
+.header{
+    @include flex(row,space-around,center);
+    padding:$small;
+    border-bottom: 2px solid $secondary;
+    flex-wrap: wrap;
+
+    &__img{
+        max-width: 120px;
+    }
+}
+
+
+.menu{
+    display: flex;
+    gap: $small;
+    flex-wrap: wrap;
+    .menu__link{
+        font-size: $medium;
+        padding: $xsmall;
+        flex-wrap: wrap;
+        
+        &:hover{
+            color: $secondary;
+        }
+    }
+    .menu__item{
+        flex-wrap: wrap;
+    }
+}
